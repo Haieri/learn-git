@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int sum (int a, int b) {
-    int sum = a + b;
-    return sum;
-}
-
 int main () {
-    int a, b;
-    scanf ("%d%d", &a, &b);
-
-    int answer = sum (a, b);
-    printf ("the answer is equal to : %d", answer);
-
+	int n;
+	scanf ("%d", &n);
+	
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		int temp;
+		scanf ("%d", &temp);
+		sum += temp;
+	}
+    scanf ("the answer is equal to : %d", sum);
     return 0;
 }
 
