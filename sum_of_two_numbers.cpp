@@ -8,10 +8,11 @@ int sum (int a, int b) {
 
 int main () {
     int a, b;
-    scanf ("&d&d", &a, &b);
+    scanf ("%d%d", &a, &b);
 
     int answer = sum (a, b);
-    scanf ("the answer is equal to : %d", answer);
+    printf ("the answer is equal to : %d", answer);
 
     return 0;
 }
+
